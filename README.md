@@ -1,1 +1,1 @@
-# tsup-starter
+# TSup Library Template
