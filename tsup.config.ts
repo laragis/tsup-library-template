@@ -1,6 +1,5 @@
-// @ts-check
 import { defineConfig } from 'tsup'
-import { legacyConfig, modernConfig } from './scripts/getTsupConfig'
+import { legacyConfig, modernConfig } from '@laragis/tsup-config'
 
 export default defineConfig([
   modernConfig({ entry: ['src/*.ts', 'src/*.tsx'] }),

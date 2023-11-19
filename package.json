@@ -29,11 +29,12 @@
   "module": "build/legacy/index.js",
   "types": "build/legacy/index.d.ts",
   "files": [
-    "dist",
-    "src"
+    "build",
+    "src",
+    "package.json"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "cross-env NODE_ENV=production tsup",
     "clean": "rimraf ./build",
     "dev": "tsup --watch",
     "test": "vitest run",
@@ -41,13 +42,14 @@
   },
   "devDependencies": {
     "@laragis/tsconfig": "github:laragis/tsconfig",
+    "@laragis/tsup-config": "^0.0.1",
     "@types/node": "^20.9.1",
     "cross-env": "^7.0.3",
     "esbuild-plugin-file-path-extensions": "^1.0.0",
     "prettier": "^3.1.0",
     "rimraf": "^5.0.5",
     "ts-node": "^10.9.1",
-    "tsup": "^7.3.0",
+    "tsup": "^8.0.0",
     "type-fest": "^4.8.1",
     "typescript": "^5.2.2",
     "vitest": "^0.34.6"
