@@ -47,7 +47,6 @@
     "@types/node": "^20.9.1",
     "concurrently": "^8.2.2",
     "cross-env": "^7.0.3",
-    "esbuild-plugin-file-path-extensions": "^1.0.0",
     "nodemon": "^3.0.1",
     "prettier": "^3.1.0",
     "rimraf": "^5.0.5",
