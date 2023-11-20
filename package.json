@@ -38,14 +38,17 @@
     "clean": "rimraf ./build",
     "dev": "tsup --watch",
     "test": "vitest run",
-    "test:watch": "vitest --watch"
+    "test:watch": "vitest --watch",
+    "yalc:watch": "concurrently --kill-others \"tsup --watch\" \"nodemon -e js --watch build --delay 500ms --exec yalc push --changed\""
   },
   "devDependencies": {
-    "@laragis/tsconfig": "github:laragis/tsconfig",
+    "@laragis/tsconfig": "^0.0.1",
     "@laragis/tsup-config": "^0.0.1",
     "@types/node": "^20.9.1",
+    "concurrently": "^8.2.2",
     "cross-env": "^7.0.3",
     "esbuild-plugin-file-path-extensions": "^1.0.0",
+    "nodemon": "^3.0.1",
     "prettier": "^3.1.0",
     "rimraf": "^5.0.5",
     "ts-node": "^10.9.1",
